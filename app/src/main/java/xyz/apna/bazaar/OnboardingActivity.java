@@ -29,11 +29,11 @@ public class OnboardingActivity extends AppCompatActivity {
 //        preferencesEditor.putBoolean(getString(R.string.key_is_first_session), true);
 //        preferencesEditor.apply();
 
-        viewPager = (ViewPager) findViewById(R.id.OA_VP_slides);
+        viewPager = findViewById(R.id.OA_VP_slides);
         ViewPagerAdapter adapter = new ViewPagerAdapter(this);
         viewPager.setAdapter(adapter);
 
-        btnNext = (Button) findViewById(R.id.OA_BTN_next);
+        btnNext = findViewById(R.id.OA_BTN_next);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
