@@ -31,7 +31,6 @@
         <activity
             android:name=".EntryActivity"
             android:exported="true"
-            android:label="@string/title_activity_entry"
             android:noHistory="true"
             android:theme="@style/Theme.Bazaar.SplashScreen">
             <intent-filter>

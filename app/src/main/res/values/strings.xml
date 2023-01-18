@@ -5,7 +5,6 @@
     <string name="id_pager_onboarding_page_2">id_pager_onboarding_page_1</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_onboarding">OnboardingActivity</string>
-    <string name="title_activity_entry">EntryActivity</string>
     <string name="title_home">Home</string>
     <string name="title_cart">Cart</string>
     <string name="title_dashboard">Dashboard</string>
