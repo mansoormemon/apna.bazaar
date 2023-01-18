@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom styles for widgets. -->
+    <style name="pill">
+        <item name="cornerSizeTopLeft">100%</item>
+        <item name="cornerSizeTopRight">100%</item>
+        <item name="cornerSizeBottomRight">100%</item>
+        <item name="cornerSizeBottomLeft">100%</item>
+    </style>
+</resources>

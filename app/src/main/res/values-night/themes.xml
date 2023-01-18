@@ -1,19 +1,20 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.Bazaar" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/td_orange</item>
-        <item name="colorPrimaryVariant">@color/td_blue</item>
+        <item name="colorPrimary">@color/theme_night_orange</item>
+        <item name="colorPrimaryVariant">@color/theme_night_blue</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/td_pink</item>
-        <item name="colorSecondaryVariant">@color/td_yellow</item>
+        <item name="colorSecondary">@color/theme_night_pink</item>
+        <item name="colorSecondaryVariant">@color/theme_night_yellow</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/dark_gray</item>
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- Splash screen theme. -->
     <style name="Theme.Bazaar.SplashScreen" parent="Theme.SplashScreen">
         <!-- Set the splash screen background, animated icon, and animation duration. -->
         <item name="windowSplashScreenBackground">@color/black</item>

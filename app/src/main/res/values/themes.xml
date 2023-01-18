@@ -2,12 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Bazaar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/tl_orange</item>
-        <item name="colorPrimaryVariant">@color/tl_blue</item>
+        <item name="colorPrimary">@color/theme_day_orange</item>
+        <item name="colorPrimaryVariant">@color/theme_day_blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/tl_pink</item>
-        <item name="colorSecondaryVariant">@color/tl_yellow</item>
+        <item name="colorSecondary">@color/theme_day_pink</item>
+        <item name="colorSecondaryVariant">@color/theme_day_yellow</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/dark_gray</item>

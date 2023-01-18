@@ -14,14 +14,14 @@ public class EntryActivity extends AppCompatActivity {
 
         SplashScreen.installSplashScreen(this);
 
-        Intent next_activity = null;
-        boolean is_first_session = getSharedPreferences(getPackageName(), MODE_PRIVATE).getBoolean(getString(R.string.key_is_first_session), false);
-        if (is_first_session) {
-            next_activity = new Intent(this, MainActivity.class);
-        } else {
-            next_activity = new Intent(this, OnBoardingActivity.class);
-        }
-        startActivity(next_activity);
+        boolean isFirstSession =
+                getSharedPreferences(getPackageName(), MODE_PRIVATE)
+                        .getBoolean(getString(R.string.key_is_first_session), false);
+
+        Intent nextActivity = isFirstSession
+                ? new Intent(this, MainActivity.class)
+                : new Intent(this, OnboardingActivity.class);
+        startActivity(nextActivity);
 
         finish();
     }

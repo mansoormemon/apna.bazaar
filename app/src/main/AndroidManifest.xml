@@ -13,18 +13,25 @@
         android:theme="@style/Theme.Bazaar"
         tools:targetApi="31">
         <activity
-            android:name=".OnBoardingActivity"
-            android:exported="false">
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:name=".OnboardingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_onboarding">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".EntryActivity"
             android:exported="true"
+            android:label="@string/title_activity_entry"
             android:noHistory="true"
             android:theme="@style/Theme.Bazaar.SplashScreen">
             <intent-filter>
@@ -32,6 +39,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
     </application>
 
