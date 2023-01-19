@@ -28,6 +28,7 @@ public class OnboardingActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_onboarding);
 
+        // TODO: Enable this.
 //        SharedPreferences.Editor preferencesEditor = getSharedPreferences(getPackageName(), MODE_PRIVATE).edit();
 //        preferencesEditor.putBoolean(getString(R.string.key_is_first_session), true);
 //        preferencesEditor.apply();
