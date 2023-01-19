@@ -9,4 +9,10 @@
     <string name="title_cart">Cart</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_preferences">Preferences</string>
+    <string name="empty_string" />
+    <string name="oa_p1_heading">Welcome</string>
+    <string name="oa_p1_quote">We are glad to see you.</string>
+    <string name="oa_p2_heading">Let\'s Shop</string>
+    <string name="oa_p2_quote">Stay home and shop online.</string>
+    <string name="oa_btn_get_started">Get Started</string>
 </resources>
