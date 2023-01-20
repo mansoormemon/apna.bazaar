@@ -19,7 +19,7 @@ public class EntryActivity extends AppCompatActivity {
                         .getBoolean(getString(R.string.key_is_first_session), false);
 
         Intent nextActivity = isFirstSession
-                ? new Intent(this, SignInActivity.class)
+                ? new Intent(this, MainActivity.class)
                 : new Intent(this, OnboardingActivity.class);
         startActivity(nextActivity);
 
