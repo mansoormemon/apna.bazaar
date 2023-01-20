@@ -20,7 +20,7 @@
 
 
     <View
-        android:id="@+id/divider5"
+        android:id="@+id/PRF_D_1"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginTop="16dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/PRF_F_heading" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/PRF_TV_accounts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -38,7 +38,7 @@
         android:text="ACCOUNTS"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+        app:layout_constraintTop_toBottomOf="@+id/PRF_D_1" />
 
     <Button
         android:id="@+id/PRF_BTN_signIn"
@@ -51,11 +51,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/PRF_TV_accounts"
         app:shapeAppearanceOverlay="@style/pill" />
 
     <View
-        android:id="@+id/divider4"
+        android:id="@+id/PRF_D_2"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginTop="16dp"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/PRF_BTN_signIn" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/PRF_TV_general"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -73,6 +73,45 @@
         android:text="GENERAL"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+        app:layout_constraintTop_toBottomOf="@+id/PRF_D_2" />
+
+    <ListView
+        android:id="@+id/PFF_L_general"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PRF_TV_general" />
+
+    <View
+        android:id="@+id/PRF_D_3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PFF_L_general" />
+
+    <TextView
+        android:id="@+id/PRF_TV_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="ABOUT"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PRF_D_3" />
+
+    <ListView
+        android:id="@+id/PRF_L_about"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PRF_TV_about" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
