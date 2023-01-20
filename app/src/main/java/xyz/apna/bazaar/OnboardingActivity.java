@@ -1,6 +1,7 @@
 package xyz.apna.bazaar;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,10 +29,9 @@ public class OnboardingActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_onboarding);
 
-        // TODO: Enable this.
-//        SharedPreferences.Editor preferencesEditor = getSharedPreferences(getPackageName(), MODE_PRIVATE).edit();
-//        preferencesEditor.putBoolean(getString(R.string.key_is_first_session), true);
-//        preferencesEditor.apply();
+        SharedPreferences.Editor preferencesEditor = getSharedPreferences(getPackageName(), MODE_PRIVATE).edit();
+        preferencesEditor.putBoolean(getString(R.string.key_is_first_session), true);
+        preferencesEditor.apply();
 
         viewPager = findViewById(R.id.OA_VP_slides);
         ViewPagerAdapter adapter = new ViewPagerAdapter(this);
