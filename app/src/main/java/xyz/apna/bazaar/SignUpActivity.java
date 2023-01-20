@@ -4,10 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.ImageButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,7 +18,6 @@ public class SignUpActivity extends AppCompatActivity {
     protected TextInputEditText boxContact;
     protected CheckBox ckbLegal;
     protected Button btnSignUp;
-    protected ImageButton btnGoogle;
     protected TextView linkSignIn;
 
     @Override
@@ -40,11 +37,6 @@ public class SignUpActivity extends AppCompatActivity {
         ckbLegal = findViewById(R.id.SUA_CKB_legal);
 
         btnSignUp = findViewById(R.id.SUA_BTN_signUp);
-
-        btnGoogle = findViewById(R.id.SUA_IBTN_google);
-        btnGoogle.setOnClickListener(v -> {
-            Toast.makeText(this, "Stub: Sign in with Google", Toast.LENGTH_SHORT).show();
-        });
 
         linkSignIn = findViewById(R.id.SUA_TV_signIn);
         linkSignIn.setOnClickListener(v -> {
