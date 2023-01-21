@@ -7,7 +7,6 @@
     <string name="title_activity_onboarding">OnboardingActivity</string>
     <string name="title_home">Home</string>
     <string name="title_cart">Cart</string>
-    <string name="title_dashboard">Dashboard</string>
     <string name="title_preferences">Preferences</string>
     <string name="empty_string" />
     <string name="oa_p1_heading">Welcome</string>

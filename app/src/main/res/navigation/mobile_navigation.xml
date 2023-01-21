@@ -18,12 +18,6 @@
         tools:layout="@layout/fragment_cart" />
 
     <fragment
-        android:id="@+id/OA_MN_navigationDashboard"
-        android:name="xyz.apna.bazaar.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
         android:id="@+id/OA_MN_navigationPreferences"
         android:name="xyz.apna.bazaar.ui.preferences.PreferencesFragment"
         android:label="@string/title_preferences"
