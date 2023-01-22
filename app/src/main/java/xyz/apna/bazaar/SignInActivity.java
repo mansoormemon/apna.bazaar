@@ -1,6 +1,8 @@
 package xyz.apna.bazaar;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -73,6 +75,10 @@ public class SignInActivity extends AppCompatActivity {
                 task.getResult(ApiException.class);
                 Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                 startActivity(intent);
+
+                SharedPreferences.Editor preferencesEditor = getSharedPreferences(getPackageName(), Context.MODE_PRIVATE).edit();
+                preferencesEditor.putBoolean(getString(R.string.key_is_signed_in), true);
+                preferencesEditor.apply();
             } catch (ApiException e) {
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
             }

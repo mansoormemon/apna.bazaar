@@ -2,7 +2,9 @@ package xyz.apna.bazaar;
 
 import static android.view.WindowManager.LayoutParams;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -131,6 +133,10 @@ public class SignUpActivity extends AppCompatActivity {
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                         Toast.makeText(SignUpActivity.this, "Registration successful.", Toast.LENGTH_SHORT).show();
+
+                        SharedPreferences.Editor preferencesEditor = getSharedPreferences(getPackageName(), Context.MODE_PRIVATE).edit();
+                        preferencesEditor.putBoolean(getString(R.string.key_is_signed_in), true);
+                        preferencesEditor.apply();
                     } else {
                         Toast.makeText(SignUpActivity.this, String.valueOf(task.getException()), Toast.LENGTH_SHORT).show();
                     }

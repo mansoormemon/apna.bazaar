@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Bazaar</string>
     <string name="key_is_first_session">key_is_first_session</string>
+    <string name="key_is_signed_in">key_is_signed_in</string>
     <string name="id_pager_onboarding_page_1">id_pager_onboarding_page_1</string>
     <string name="id_pager_onboarding_page_2">id_pager_onboarding_page_2</string>
     <string name="title_activity_main">MainActivity</string>
