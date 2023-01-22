@@ -48,7 +48,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/SUA_TIET_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,7 +72,8 @@
             android:id="@+id/SUA_TIET_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -104,6 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_weight="1"
+            android:checked="true"
             android:text="@string/sua_label_male"
             app:layout_constraintStart_toEndOf="@+id/SUA_TV_gender"
             tools:layout_editor_absoluteY="518dp" />
@@ -138,7 +142,8 @@
             android:id="@+id/SUA_TIET_contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="phone" />
+            android:inputType="phone"
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
