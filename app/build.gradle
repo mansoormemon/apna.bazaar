@@ -47,8 +47,9 @@ dependencies {
     def splashscreen_version = '1.0.0'
     implementation "androidx.core:core-splashscreen:$splashscreen_version"
 
-    def firebase_auth_version = '21.1.0'
-    implementation "com.google.firebase:firebase-auth:$firebase_auth_version"
+    def firebase_bom_version = '31.2.0'
+    implementation platform("com.google.firebase:firebase-bom:$firebase_bom_version")
+    implementation 'com.google.firebase:firebase-auth'
 
     def play_services_auth_version = '20.4.1'
     implementation "com.google.android.gms:play-services-auth:$play_services_auth_version"

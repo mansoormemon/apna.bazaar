@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "175588935931",
-    "firebase_url": "https://bazaar-13efd-default-rtdb.firebaseio.com",
-    "project_id": "bazaar-13efd",
-    "storage_bucket": "bazaar-13efd.appspot.com"
+    "project_number": "813240421974",
+    "firebase_url": "https://bazaar-6a9cb-default-rtdb.firebaseio.com",
+    "project_id": "bazaar-6a9cb",
+    "storage_bucket": "bazaar-6a9cb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:175588935931:android:32314eff3c8cbf526f885e",
+        "mobilesdk_app_id": "1:813240421974:android:f49124ffa5968f19def5f7",
         "android_client_info": {
           "package_name": "xyz.apna.bazaar"
         }
       },
       "oauth_client": [
         {
-          "client_id": "175588935931-cu0lac4dhkudpptlr1qpogovdo850lvl.apps.googleusercontent.com",
+          "client_id": "813240421974-paifbfldsl3q2d5q1vnn0lf2198mqts6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.apna.bazaar",
+            "certificate_hash": "f3627af04be0587133566b0a4884f7ee60a66873"
+          }
+        },
+        {
+          "client_id": "813240421974-6b53aafpf5mu92k64itrj9v191upnbri.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDl2iD1Q0IlMl7-7TuGtexrYwa4BJFJox4"
+          "current_key": "AIzaSyChX_yAZ6FpAdePZJ47BFMIt14pRJDk8BY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "175588935931-cu0lac4dhkudpptlr1qpogovdo850lvl.apps.googleusercontent.com",
+              "client_id": "813240421974-6b53aafpf5mu92k64itrj9v191upnbri.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

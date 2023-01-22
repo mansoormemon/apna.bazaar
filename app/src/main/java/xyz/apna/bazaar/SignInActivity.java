@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class SignInActivity extends AppCompatActivity {
+    protected final int REQUEST_CODE = 1000;
+
     protected TextInputEditText boxEmail;
     protected TextInputEditText boxPassword;
     protected TextView linkForgotPassword;
@@ -50,7 +52,7 @@ public class SignInActivity extends AppCompatActivity {
         btnGoogle = findViewById(R.id.SIA_IBTN_google);
         btnGoogle.setOnClickListener(v -> {
             Intent signInIntent = gsc.getSignInIntent();
-            startActivityForResult(signInIntent, 1000);
+            startActivityForResult(signInIntent, REQUEST_CODE);
         });
 
         linkSignUp = findViewById(R.id.SIA_TV_signUp);
@@ -63,7 +65,8 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 1000) {
+
+        if (requestCode == REQUEST_CODE) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
 
             try {
@@ -71,7 +74,7 @@ public class SignInActivity extends AppCompatActivity {
                 Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                 startActivity(intent);
             } catch (ApiException e) {
-                Toast.makeText(getApplicationContext(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }
     }
