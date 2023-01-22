@@ -16,7 +16,11 @@ import xyz.apna.bazaar.databinding.FragmentCartBinding;
 
 public class CartFragment extends Fragment {
 
-    private FragmentCartBinding binding;
+    protected FragmentCartBinding binding;
+
+    protected ViewPager2 viewPager;
+    protected TabLayout tabLayout;
+    protected TabAdapter tabAdapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container,
@@ -26,10 +30,10 @@ public class CartFragment extends Fragment {
 
         binding = FragmentCartBinding.inflate(inflater, container, false);
 
-        ViewPager2 viewPager = binding.CRTVPContent;
-        TabLayout tabLayout = binding.CRTTLTabs;
-        TabAdapter adapter = new TabAdapter(this, tabLayout.getTabCount());
-        viewPager.setAdapter(adapter);
+        viewPager = binding.CRTVPContent;
+        tabLayout = binding.CRTTLTabs;
+        tabAdapter = new TabAdapter(this, tabLayout.getTabCount());
+        viewPager.setAdapter(tabAdapter);
         viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {

@@ -9,6 +9,7 @@
     <string name="title_home">Home</string>
     <string name="title_cart">Cart</string>
     <string name="title_preferences">Preferences</string>
+    <string name="title_billing">Billing</string>
     <string name="empty_string" />
     <string name="oa_p1_heading">Welcome</string>
     <string name="oa_p1_quote">We are glad to see you.</string>
