@@ -1,11 +1,14 @@
 package xyz.apna.bazaar;
 
-import android.app.ProgressDialog;
+import static android.view.WindowManager.LayoutParams;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,6 +47,8 @@ public class SignUpActivity extends AppCompatActivity {
 
     protected TextView linkSignIn;
 
+    protected ProgressBar progressBar;
+
     protected FirebaseAuth auth;
     protected FirebaseUser user;
 
@@ -74,7 +79,7 @@ public class SignUpActivity extends AppCompatActivity {
         btnSignUp = findViewById(R.id.SUA_BTN_signUp);
         btnSignUp.setEnabled(false);
 
-        ProgressDialog progressDialog = new ProgressDialog(this);
+        progressBar = findViewById(R.id.SUA_PB_registering);
 
         FirebaseApp.initializeApp(getBaseContext());
         auth = FirebaseAuth.getInstance();
@@ -114,22 +119,19 @@ public class SignUpActivity extends AppCompatActivity {
                 isContactValid = true;
             }
 
-
             if (isEmailValid && isPasswordValid && isContactValid) {
-                progressDialog.setMessage("Registering...");
-                progressDialog.setTitle("Registration");
-                progressDialog.setCanceledOnTouchOutside(false);
-                progressDialog.show();
+                progressBar.setVisibility(View.VISIBLE);
+
+                getWindow().setFlags(LayoutParams.FLAG_NOT_TOUCHABLE,
+                        LayoutParams.FLAG_NOT_TOUCHABLE);
 
                 auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        progressDialog.dismiss();
                         Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
-                        Toast.makeText(SignUpActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignUpActivity.this, "Registration successful.", Toast.LENGTH_SHORT).show();
                     } else {
-                        progressDialog.dismiss();
                         Toast.makeText(SignUpActivity.this, String.valueOf(task.getException()), Toast.LENGTH_SHORT).show();
                     }
                 });
