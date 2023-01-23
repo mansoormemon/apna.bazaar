@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="dark_gray">#181818</color>
-
     <!-- Theme palette. -->
     <color name="theme_orange">#FFE76F51</color>
-    <color name="theme_blue">#FF51C9E7</color>
-    <color name="theme_pink">#FFE7517E</color>
-    <color name="theme_yellow">#FFE7BA51</color>
-
+    <color name="theme_blue">#FF0A89E7</color>
+    <color name="theme_green">#FF7CB45C</color>
+    <color name="theme_yellow">#FFFEB856</color>
 </resources>

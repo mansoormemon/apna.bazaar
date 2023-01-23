@@ -6,7 +6,7 @@
 
     <!-- Theme palette. -->
     <color name="theme_orange">#FFE76F51</color>
-    <color name="theme_blue">#FF51C9E7</color>
-    <color name="theme_pink">#FFE7517E</color>
+    <color name="theme_blue">#FF0A89E7</color>
+    <color name="theme_green">#FF68BB59</color>
     <color name="theme_yellow">#FFE7BA51</color>
 </resources>

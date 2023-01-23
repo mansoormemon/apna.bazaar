@@ -29,10 +29,6 @@ public class OnboardingActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_onboarding);
 
-        SharedPreferences.Editor preferencesEditor = getSharedPreferences(getPackageName(), MODE_PRIVATE).edit();
-        preferencesEditor.putBoolean(getString(R.string.key_is_first_session), true);
-        preferencesEditor.apply();
-
         viewPager = findViewById(R.id.OA_VP_slides);
         ViewPagerAdapter adapter = new ViewPagerAdapter(this);
         viewPager.setAdapter(adapter);
@@ -64,6 +60,10 @@ public class OnboardingActivity extends AppCompatActivity {
 
         btnGetStarted = findViewById(R.id.OA_BTN_getStarted);
         btnGetStarted.setOnClickListener(v -> {
+            SharedPreferences.Editor preferencesEditor = getSharedPreferences(getPackageName(), MODE_PRIVATE).edit();
+            preferencesEditor.putBoolean(getString(R.string.key_is_first_session), true);
+            preferencesEditor.apply();
+
             Intent intent = new Intent(OnboardingActivity.this, MainActivity.class);
             startActivity(intent);
         });

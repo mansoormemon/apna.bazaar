@@ -168,6 +168,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginBottom="32dp"
         android:text="@string/sia_sign_up"
+        android:textColor="@color/theme_green"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

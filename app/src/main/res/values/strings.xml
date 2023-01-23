@@ -12,9 +12,9 @@
     <string name="title_billing">Billing</string>
     <string name="empty_string" />
     <string name="oa_p1_heading">Welcome</string>
-    <string name="oa_p1_quote">We are glad to see you.</string>
+    <string name="oa_p1_quote">We are delighted to have you among us!</string>
     <string name="oa_p2_heading">Let\'s Shop</string>
-    <string name="oa_p2_quote">Stay home and shop online.</string>
+    <string name="oa_p2_quote">We hope you have your shopping list ready!</string>
     <string name="oa_btn_get_started">Get Started</string>
     <string name="sia_heading">Sign In</string>
     <string name="sia_sub_heading">Welcome</string>
