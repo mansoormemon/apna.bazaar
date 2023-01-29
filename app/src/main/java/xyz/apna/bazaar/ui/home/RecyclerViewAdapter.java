@@ -9,7 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
@@ -24,6 +27,7 @@ public class RecyclerViewAdapter extends
         public TextView subTitle;
         public ImageView img;
         public TextView price;
+        public FloatingActionButton addToCart;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -32,12 +36,15 @@ public class RecyclerViewAdapter extends
             subTitle = itemView.findViewById(R.id.HM_ITMS_subTitle);
             img = itemView.findViewById(R.id.HM_ITMS_IV_product);
             price = itemView.findViewById(R.id.HM_ITMS_price);
+            addToCart = itemView.findViewById(R.id.HM_ITMS_BTN_addToCart);
         }
     }
 
+    private final Context context;
     private final List<ItemCardModel> items;
 
-    public RecyclerViewAdapter(List<ItemCardModel> items_) {
+    public RecyclerViewAdapter(Context context_, List<ItemCardModel> items_) {
+        context = context_;
         items = items_;
     }
 
@@ -65,6 +72,12 @@ public class RecyclerViewAdapter extends
         img.setBackgroundResource(model.getImgID());
         TextView price = holder.price;
         price.setText("Rs. " + model.getPrice());
+
+        FloatingActionButton addToCart = holder.addToCart;
+        addToCart.setOnClickListener(v -> {
+            ProductFragment productFragment = new ProductFragment(model);
+            productFragment.show(((AppCompatActivity) context).getSupportFragmentManager(), null);
+        });
     }
 
     @Override

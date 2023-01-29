@@ -12,13 +12,12 @@ import java.util.stream.Stream;
 import xyz.apna.bazaar.R;
 
 class Vegies {
-    public static String[] titles = {"Tomato", "Garlic", "Potato", "Onions", "Lemon", "Lettuce", "Cabbage", "Cucumber", "Bell Pepper"};
+    public static String[] titles = {"Garlic", "Potato", "Onions", "Lemon", "Lettuce", "Cabbage", "Cucumber", "Bell Pepper"};
 
-    public static Double[] prices = {9.63, 1.87, 9.67, 1.60, 3.92, 4.47, 6.83, 8.12, 1.81};
+    public static Double[] prices = {9.63, 9.67, 1.61, 3.92, 4.47, 6.83, 8.12, 1.81};
 
     public static String[] subTitles = {
             "22 mins ⭐ 4.8",
-            "15 mins ⭐ 4.6",
             "30 mins ⭐ 4.9",
             "20 mins ⭐ 4.1",
             "10 mins ⭐ 4.4",
@@ -29,7 +28,6 @@ class Vegies {
     };
 
     public static Integer[] imgIDs = {
-            R.drawable.tomatoes_hd,
             R.drawable.garlic_hd,
             R.drawable.potatoes_hd,
             R.drawable.onion_hd,
@@ -43,11 +41,12 @@ class Vegies {
 }
 
 class Fruit {
-    public static String[] titles = {"Banana", "Apple", "Watermelon", "Blueberry", "Strawberry", "Pineapple", "Orange"};
+    public static String[] titles = {"Banana", "Tomato", "Apple", "Watermelon", "Blueberry", "Strawberry", "Pineapple", "Orange"};
 
-    public static Double[] prices = {5.91, 5.47, 14.80, 8.12, 9.81, 12.3, 8.41};
+    public static Double[] prices = {5.91, 1.87, 5.47, 14.80, 8.12, 9.81, 12.3, 8.41};
 
     public static String[] subTitles = {
+            "15 mins ⭐ 4.6",
             "12 mins ⭐ 4.9",
             "5 mins ⭐ 5.0",
             "20 mins ⭐ 4.3",
@@ -59,6 +58,7 @@ class Fruit {
 
     public static Integer[] imgIDs = {
             R.drawable.bananas_hd,
+            R.drawable.tomatoes_hd,
             R.drawable.apples_hd,
             R.drawable.watermelon_hd,
             R.drawable.blueberries_hd,

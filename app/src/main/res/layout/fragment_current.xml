@@ -71,6 +71,8 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="96dp"
         android:text="@string/crt_cur_btn_checkout"
+        app:icon="@drawable/ic_baseline_shopping_cart_checkout_24"
+        app:iconGravity="end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,4 +1,4 @@
-package xyz.apna.bazaar;
+package xyz.apna.bazaar.ui.cart;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
+
+import xyz.apna.bazaar.R;
 
 public class BillingFragment extends DialogFragment {
 

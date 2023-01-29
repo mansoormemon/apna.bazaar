@@ -6,5 +6,6 @@
     <color name="theme_green">#FF7CB45C</color>
     <color name="theme_yellow">#FFFEB856</color>
 
-    <color name="inputBoxBackgroundColor">#212121</color>
+    <color name="themeBackgroundColor">#212121</color>
+    <color name="themeForegroundColor">#EAEAEA</color>
 </resources>

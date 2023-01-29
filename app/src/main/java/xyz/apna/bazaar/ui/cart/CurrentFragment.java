@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-import xyz.apna.bazaar.BillingFragment;
 import xyz.apna.bazaar.Item;
 import xyz.apna.bazaar.R;
 

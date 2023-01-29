@@ -51,19 +51,19 @@ public class HomeFragment extends Fragment {
 
         topSellingItems = Inventory.getTopSellingProducts();
         rvTopSelling = binding.HMRVTopSelling;
-        RecyclerViewAdapter adapterTopSelling = new RecyclerViewAdapter(topSellingItems);
+        RecyclerViewAdapter adapterTopSelling = new RecyclerViewAdapter(getContext(), topSellingItems);
         rvTopSelling.setAdapter(adapterTopSelling);
         rvTopSelling.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
 
         vegeies = Inventory.getVegies();
         rvVegies = binding.HMRVVegies;
-        RecyclerViewAdapter adapterVegies = new RecyclerViewAdapter(vegeies);
+        RecyclerViewAdapter adapterVegies = new RecyclerViewAdapter(getContext(), vegeies);
         rvVegies.setAdapter(adapterVegies);
         rvVegies.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
 
         fruits = Inventory.getFruits();
         rvFruits = binding.HMRVFruits;
-        RecyclerViewAdapter adapterFruits = new RecyclerViewAdapter(fruits);
+        RecyclerViewAdapter adapterFruits = new RecyclerViewAdapter(getContext(), fruits);
         rvFruits.setAdapter(adapterFruits);
         rvFruits.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
 
