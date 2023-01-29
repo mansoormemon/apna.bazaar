@@ -7,21 +7,21 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/CRT_ITMS_name"
+        android:id="@+id/CRT_ITMS_TV_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:text="Name"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/CRT_ITMS_price"
+        android:id="@+id/CRT_ITMS_TV_price"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -29,38 +29,39 @@
         android:text="Price"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CRT_ITMS_name" />
+        app:layout_constraintTop_toBottomOf="@+id/CRT_ITMS_TV_name" />
 
     <TextView
-        android:id="@+id/CRT_ITMS_quantity"
+        android:id="@+id/CRT_ITMS_TV_quantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Quantity"
-        app:layout_constraintEnd_toStartOf="@+id/CRT_ITMS_unit"
-        app:layout_constraintTop_toBottomOf="@+id/CRT_ITMS_name" />
+        app:layout_constraintEnd_toStartOf="@+id/CRT_ITMS_TV_unit"
+        app:layout_constraintTop_toBottomOf="@+id/CRT_ITMS_TV_name" />
 
     <TextView
-        android:id="@+id/CRT_ITMS_category"
+        android:id="@+id/CRT_ITMS_TV_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
         android:text="Category"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CRT_ITMS_price"
+        app:layout_constraintTop_toBottomOf="@+id/CRT_ITMS_TV_price"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/CRT_ITMS_unit"
+        android:id="@+id/CRT_ITMS_TV_unit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:text="Unit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CRT_ITMS_name" />
+        app:layout_constraintTop_toBottomOf="@+id/CRT_ITMS_TV_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

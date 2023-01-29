@@ -9,7 +9,7 @@ public class Item {
 
     public Item(String name_, String category_, double price_, double quantity_, String unit_) {
         name = name_;
-        category = category;
+        category = category_;
         price = price_;
         quantity = quantity_;
         unit = unit_;

@@ -51,6 +51,8 @@
             android:inputType="textEmailAddress"
             android:maxLines="1" />
 
+        <requestFocus />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -141,6 +143,7 @@
         android:id="@+id/SIA_IBTN_google"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
         android:backgroundTint="@android:color/transparent"
         android:scaleX="0.4"
         android:scaleY="0.4"

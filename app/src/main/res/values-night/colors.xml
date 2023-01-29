@@ -5,4 +5,6 @@
     <color name="theme_blue">#FF0A89E7</color>
     <color name="theme_green">#FF7CB45C</color>
     <color name="theme_yellow">#FFFEB856</color>
+
+    <color name="inputBoxBackgroundColor">#212121</color>
 </resources>

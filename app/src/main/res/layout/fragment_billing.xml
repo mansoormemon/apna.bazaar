@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/title_billing"
+        android:textColor="@color/theme_yellow"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +81,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Card Number" />
+
+        <requestFocus />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
@@ -107,6 +111,7 @@
                 android:layout_height="wrap_content"
                 android:hint="MM/YY"
                 android:inputType="date" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <Space
@@ -125,6 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="CVC" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
